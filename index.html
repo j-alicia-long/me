@@ -2,605 +2,269 @@
 <html lang="en">
 
 <head>
+    <!-- Google Analytics -->
+    <!--
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90552416-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    -->
+    <!-- End Google Analytics -->
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Jenny R. Zhang</title>
+    <title>Jennifer Alicia Long</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/photos/favicon.ico" type="image/x-icon">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!--Custom CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9MKRRX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Navigation</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Interests</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Jenny R. Zhang</h1>
-            <h3>Full Stack Developer | Graphic Designer | Event Planner</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Welcome!</a>
-        </div>
-    </header>
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx"> 
+            <i class="fa fa-bars white-text"></i>
+        </button>
 
-    <!-- About -->
-    <section id="about" class="about">
         <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="" target="_blank"></a>
+                <!--Left Side-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item animateUnderline">
+                        <a class="nav-link" href="#home" style="margin-right: 1rem;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item animateUnderline">
+                        <a class="nav-link" href="#about" style="margin-right: 1rem">About</a>
+                    </li>
+                    <li class="nav-item animateUnderline">
+                        <a class="nav-link" href="#projects" style="margin-right: 1rem;">Projects</a>
+                    </li>
+                    <li class="nav-item animateUnderline">
+                        <a class="nav-link" href="#contact" style="margin-right: 1rem;">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav nav-flex-icons">
+                    <li class="nav-item animateUnderline"p>
+                        <a class="nav-link waves-effect waves-light" target="_blank" href="doc/Jennifer_Long_Resume.pdf" style="margin-right: 1rem;">
+                            <i class="fa fa-file-text faa-tada animated-hover"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item animateUnderline">
+                        <a class="nav-link waves-effect waves-light" href="https://github.com/j-alicia-long" style="margin-right: 1rem;">
+                            <i class="fa fa-github faa-tada animated-hover"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Collapse content-->
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+
+    <div id="home"></div>
+    <!--Mask-->
+    <div class="view">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <h1 id='primary-intro' class="h1-responsive wow fadeInDown" data-wow-delay="0.2s">
+                        <span class="element" style="font-size: 5rem"><b>Jennifer Long</b></span>
+                    </h1>
+                </li>
+                <li>
+                    <p id="secondary-intro" class="wow fadeInUp" data-wow-delay="1.0s" style="font-size: 1.5em;">Full-Stack Web Developer | Graphic Designer</p>
+                </li>
+                <li>
+                    <a target="_blank" id='contactmebutton' href="mailto:jalicialong&#64;gmail.com?Subject=Hi%20Jennifer!" class="btn btn-dark btn-lg wow fadeInDown" data-wow-delay="1.5s">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <!-- Main container-->
+    <div id="about"></div>
+    <div class="container">
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInDown">About Me</h2>
+        </div>
+        <section>
+        <!--Section: About-->
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img class="center-block img-responsive" src="img/profile.png" alt=""width="256px">
-                    <h2>Hi, I'm Jenny</h2>
-                    <p class="lead">
-                        I'm a creative developer based in Greater Washington. 
-                        <br />
-                        I have a passion for CS and enjoy solving real-life problems with my coding skills.
-                        <br />
-                        Thomas Jefferson High School for Science and Technology, Class of 2017.
-                        <br />
+                <div class="col-md-4 wow fadeInUp" style="align-content: center" data-wow-delay="0.4">
+                    <!--PFP-->
+                    <div class="overlay hm-white-slight flex-center">
+                    <img src="img/sunrise-silhouette.jpeg" class="img-fluid z-depth-2" alt="pfp">
+                    </div>
+                </div>
+                <div class="col-md-8" style="text-align: justify;">
+                    <p class="wow fadeInUp" data-wow-delay="0.2s" >
+                        Hey there! You've reached my site, so here's a little about me.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s" >
+                        I'm a creative full-stack web developer currently based in Charlottesville, Virginia.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.6s" >
+                        I'm a graduate of Thomas Jefferson High School for Science and Technology, and a current student at the University of Virginia, School of Engineering and Applied Sciences (SEAS).
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.8s" >
+                        I have a passion for Computer Science and for solving real-life problems with my coding skills. Each day I learn new things, tackle new challenges, and live new adventures. 
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay="1.0s" >
+                        If you're looking for quick learner with a good attitude and motivated mindset, you've come to the right place!
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay="1.2s" >
+                        <b>Feel free to reach out to me at j.alicia.long&#64;gmail.com.</b>
                     </p>
                 </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
+            </div>
+        </section>
+        <!--Section: About-->
+
+        <div id="projects"></div>
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInDown">Work I do</h2>
+        </div>
+        <!--Section: Features-->
+        <section>
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>My Interests</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Coding</strong>
-                                </h4>
-                                <p>I code front-end and back-end, fluent in HTML/CSS, Javascript &amp; JQuery, Java, and Python.</p>
-                                <a href="#portfolio" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Design &amp; Art</strong>
-                                </h4>
-                                <p>I enjoy graphic design, photography, painting, and arts and crafts. <br />I'm a perfectionist!</p>
-                                <a href="#portfolio" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Events &amp; Outreach</strong>
-                                </h4>
-                                <p>I'm the lead organizer of Techstravaganza, an annual STEM outreach event at TJHSST.</p>
-                                <a href="https://activities.tjhsst.edu/twist/" class="btn btn-light">Visit Our Website</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Music</strong>
-                                </h4>
-                                <p>I'm a singer, a pianist, and a music lover! Check out my song covers on Soundcloud.</p>
-                                <a href="https://soundcloud.com/mayflower842" class="btn btn-light">Check it out!</a>
-                            </div>
-                        </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <h3>Software Development</h3>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <h3>Graphic Design</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--/ Main container-->
+
+    <!--Banner-->
+    <div id="contact"></div>
+    <div class="banner">
+        <div class="view hm-white-slight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <h2>Connect with me</h2>
                     </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1></h1>
-        </div>
-    </aside>
-
-
- <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-              
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2><strong>Portfolio</strong></h2>
-                    <hr class="small">
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/techstrav.PNG" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/gifts.jpg" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/evolve.png" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal4">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio-3.jpg" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal5">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/BirdLifeHome.PNG" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal6">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/elements.PNG" class="img-portfolio img-responsive" alt="">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1></h1>
-        </div>
-    </aside>
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Visit My School</h2>
-                    <p>Thomas Jefferson High School for Science and Technology (TJHSST) in Alexandria, VA</p>
-                    <!--
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                    -->
+                    <div class="col-sm-5">
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://www.facebook.com/alicia.long.526875">
+                                    <span class="fa-stack fa-lg fa-fw">
+                                      <i class="fa fa-square-o fa-stack-2x"></i>
+                                      <i class="fa fa-facebook fa-stack-1x faa-tada animated-hover"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/Jenny246844">
+                                    <span class="fa-stack fa-lg fa-fw">
+                                      <i class="fa fa-square-o fa-stack-2x"></i>
+                                      <i class="fa fa-twitter fa-stack-1x faa-tada animated-hover"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jenny-zhang-946869b7">
+                                    <span class="fa-stack fa-lg fa-fw">
+                                      <i class="fa fa-square-o fa-stack-2x"></i>
+                                      <i class="fa fa-linkedin fa-stack-1x faa-tada animated-hover"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/j-alicia-long">
+                                    <span class="fa-stack fa-lg fa-fw">
+                                      <i class="fa fa-square-o fa-stack-2x"></i>
+                                      <i class="fa fa-github fa-stack-1x faa-tada animated-hover"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </aside>
+    </div>
 
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.779820970314!2d-77.17094033458085!3d38.81851380289742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b2e02877e895%3A0xc12f564af4d3bcab!2sThomas+Jefferson+High+School+for+Science+and+Technology!5e0!3m2!1sen!2sus!4v1458933549613"allowfullscreen></iframe>
-        <!--
-        "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        -->
-        <br />
-        <small>
-            <a href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185138,-77.1709403,16.75z/data=!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab"></a>
-        </small>
-        </iframe>
-    </section>
-    
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Contact Me</strong>
-                    </h4>
-                    <p>Website built and maintained by me! <br>I'm best reached through email.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (703) 861-8572</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:2017rzhang@tjhsst.edu">2017rzhang@tjhsst.edu</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-<!--                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li> -->
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100004355313829" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/107757960491028812136" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/Jenny246844" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jenny-zhang-946869b7" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Jenny R. Zhang 2016</p>
-                </div>
+    <!--Footer-->
+    <footer class="page-footer" style="padding-top: 0">
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Website created by <b> <a id="my_name" data-toggle="tooltip" data-placement="top" title="Get in touch!">Jennifer Long</b>
             </div>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>Techstrav Volunteer Sorter</h2>
-                            <hr class="small">
-                            <img src="img/techstrav.PNG" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            I am currently working on a Python program that sorts over 300 volunteers into booths and optimal job assignments based on their preferred subject area and shift input data. This project is for Techstravaganza, an annual event organized by TWIST (led by me) that attracts hundreds of visitors each year. I got tired of sorting volunteers manually year after year, so I figured I’d use my coding skills to solve this problem!
-                            <br \>
-                            The above image is an outreach flier that I created and designed.
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>April 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Software Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>Secret Santa Helper</h2>
-                            <hr class="small">
-                            <img src="img/gifts.jpg" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            Secret Santa Helper was built for my high school Cheerleading team. Each week before a football game, our team would exchange small anonymous gifts with each other - like Secret Santa. We often had problems with drawing new names for the following week - often getting ourselves or the same person several times in a row and having to redraw. Thus, I used my coding skills to write a Java program that draws new names for each week - with no repeats - and sends the team their secret pal by email. 
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>September 2014</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Software Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>Evolve</h2>
-                            <hr class="small">
-                            <img src="img/evolve.png" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            Inspired by my interest in AI and passion for Chemistry, Evolve is a mobile-friendly website that allows students to converse online in order to solve problems in Chemistry. If help is needed, the AI will provide a step-by-step solution of the problem. In the first few trials, feedback should be manually inputted by the users. This will allow the AI to learn and accurately provide solutions later on. 
-                            <br>Evolve was built with Bootstrap, MongoDB, Sublime-Text, and JGrasp, and written in Python, HTML/CSS, and Javascript.
-                            <br>Through this project I learned how to create a database and integrate it with the website. This project was built for HackTJ 2.0.
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>May 2015</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>EZMeet</h2>
-                            <hr class="small">
-                            <img src="img/portfolio-3.jpg" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            As a busy high school club leader, I often have trouble devising meetings that work with everyone’s schedule. This was the inspiration for EZMeet, a web application that provides the optimal locations and times for meetings based on info collected from users. Notifications are sent through email and text messaging.
-                            <br>Through this project I learned how to use Twilio, and gained deeper knowledge of PHP and HTML.
-                            <br>This project could potentially be implemented on Craigslist so people can find meeting points without disclosing their personal information to the other party.
-                            <br>This project was built for HackTJ 3.0.
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>February 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>BirdLife</h2>
-                            <hr class="small">
-                            <img src="img/BirdLifePlay.PNG" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            Bird Life is a Java parody of Duck Life, a popular internet game. In Bird Life, the user makes an account to collect, train, and compete their birds.
-                            <br>I’ve always been interested in game development and wanted to give this a go! Through this project I learned how to make user-friendly interfaces and implement Graphics in Java (also that Java is not the best for Graphics).
-                            <br>This project was built for my Foundations CS class.
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>June 2014</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Game Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                            <h2>Brave the Elements</h2>
-                            <hr class="small">
-                            <img src="img/elements.PNG" class="center-block img-responsive" width="300px" alt="">
-                            <br>
-                            <p><b>Description</b></p>
-                            A simple web game inspired by my love for Chemistry, Brave the Elements is a periodic table memorization game. Players are asked to name all 118 elements in the periodic table within a time limit of 5 minutes. Through this project I learned how to make a Javascript timer, and how to better integrate Javascript/JQuery with HTML/CSS.
-                            <br>This project was built for my Web Development class. Check it out <a href="https://www.tjhsst.edu/~2017rzhang/Lab01/index.html">here</a> on my TJ site!
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>April 2014</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--/.Footer-->
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- Scripts -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
 
-    <!-- Custom Theme JavaScript -->
+    <!--Materialize-->
+    <!--<script type="text/javascript" src="js/materialize.js"></script>-->
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Animations init-->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
+        new WOW().init();
     </script>
+
 
 </body>
 
