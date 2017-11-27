@@ -39,6 +39,7 @@ body {
 footer.page-footer {
     background-color: #212121;
     margin-top: 7rem;
+    padding-top: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,42 +66,14 @@ footer.page-footer {
 /*Banner*/
 
 .banner {
-    padding: 100px 0;
+    padding: 50px;
     color: #f8f8f8;
     background-size: cover;
+    height: 30%;
 }
 .banner h2 {
-    margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
-}
-.banner-social-buttons ul {
-    float: right;
-    margin: 0;    
-}
-.banner-social-buttons a {
-    color: #f8f8f8;
-}
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
 }
 
 
