@@ -8,4 +8,4 @@ This my (Jennifer Long) SWE portfolio website, built in ReactJS with react-boots
   - run `npm install` to install node modules
   - run `npm start` to start the service on `localhost:3000`
 
-##### deployed app : https://j-alicia-long.github.io/
+##### deployed app : https://j-alicia-long.github.io/me
