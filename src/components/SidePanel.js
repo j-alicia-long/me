@@ -46,7 +46,7 @@ class SidePanel extends Component {
         >
           <Breakpoint small down>
           <div className="panel-header-expanded">
-            <Navbar.Brand href="/me">{resumeData.name}</Navbar.Brand>
+            <Navbar.Brand href="/">{resumeData.name}</Navbar.Brand>
             <h6>{resumeData.role}</h6>
           </div>
           </Breakpoint>
@@ -92,10 +92,10 @@ class SidePanel extends Component {
 const PanelHeader = ({name, role}) => (
   <div className="panel-header my-2">
     <div class="image-cropper">
-      <img src="/images/columns_square.jpg" alt="avatar" class="profile-img" />
+      <img src="images/columns_square.jpg" alt="avatar" class="profile-img" />
     </div>
     <div>
-      <Navbar.Brand href="/me">{name}</Navbar.Brand>
+      <Navbar.Brand href="/">{name}</Navbar.Brand>
       <h6>{role}</h6>
     </div>
   </div>
@@ -103,12 +103,12 @@ const PanelHeader = ({name, role}) => (
 
 const PanelItems = () => (
   <>
-    <Nav.Link href="/me">About</Nav.Link>
+    <Nav.Link href="/">About</Nav.Link>
     <Nav.Link href="Jennifer Long - Resume.pdf"
               target="_blank" rel="noopener noreferrer">
       Resume
     </Nav.Link>
-    <Nav.Link href="/me/portfolio">Portfolio</Nav.Link>
+    <Nav.Link href="/portfolio">Portfolio</Nav.Link>
   </>
 );
 

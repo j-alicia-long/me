@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 import { Breakpoint, BreakpointProvider } from 'react-socks';
@@ -13,7 +13,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter basename='/me'>
       <BreakpointProvider>
         <Container className="App" fluid={true}>
           <Row className="flex-xl-nowrap">
@@ -21,15 +21,15 @@ class App extends Component {
             <Col className="p-0">
               <main>
                 <Switch>
-                  <Route exact path="/me" component={Homepage} />
-                  <Route exact path="/me/portfolio" component={Portfolio} />
+                  <Route exact path="/" component={Homepage} />
+                  <Route path="/portfolio" component={Portfolio} />
                 </Switch>
               </main>
             </Col>
           </Row>
         </Container>
       </BreakpointProvider>
-      </Router>
+      </HashRouter>
     );
   }
 }

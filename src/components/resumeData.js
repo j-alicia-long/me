@@ -1,5 +1,5 @@
 let resumeData = {
-    "imagebaseurl":"https://j-alicia-long.github.io/",
+    "imagebaseurl":"https://j-alicia-long.github.io/me",
     "name": "Jennifer Long",
     "role": "Full Stack Developer and Cloud Engineer",
     "linkedinId":"j-alicia-long",
@@ -38,7 +38,7 @@ let resumeData = {
               "to be the best version of themselves and push towards their goals.",
     "email":"rz5sc@virginia.edu",
     "address":"Charlottesville, Virginia",
-    "website":"https://j-alicia-long.github.io",
+    "website":"https://j-alicia-long.github.io/me",
     "education":[
       {
         "Name":"University of Virginia",
