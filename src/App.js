@@ -21,8 +21,8 @@ class App extends Component {
             <Col className="p-0">
               <main>
                 <Switch>
-                  <Route exact path="/" component={Homepage} />
-                  <Route exact path="/portfolio" component={Portfolio} />
+                  <Route exact path="/me" component={Homepage} />
+                  <Route exact path="/me/portfolio" component={Portfolio} />
                 </Switch>
               </main>
             </Col>
