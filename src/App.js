@@ -13,7 +13,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 class App extends Component {
   render() {
     return (
-      <HashRouter basename='/'>
+      <HashRouter basename='/me'>
       <BreakpointProvider>
         <Container className="App" fluid={true}>
           <Row className="flex-xl-nowrap">
@@ -21,8 +21,8 @@ class App extends Component {
             <Col className="p-0">
               <main>
                 <Switch>
-                  <Route exact path="/me" component={Homepage} />
-                  <Route path="/me/portfolio" component={Portfolio} />
+                  <Route exact path="/" component={Homepage} />
+                  <Route exact path="/portfolio" component={Portfolio} />
                 </Switch>
               </main>
             </Col>
