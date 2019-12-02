@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Lora', serif !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+ text-transform: uppercase;
+}
+h6 {
+  text-transform: none;
+}
+
+
+/* SidePanel */
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.navbar-brand {
+    margin-right: 0rem;
+}
+
+.panel-header{
+  color: #fff;
+  align-items: center;
+}
+.panel-header-expanded h6 {
+  color: #cfa3a3;
+}
+
+.image-cropper {
+    width: 11rem;
+    height: 11rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.profile-img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.contact-info {
+ font-family: 'Lora', serif;
+ text-transform: lowercase;
+}
+.social-links {
+ font-size: 1.5rem;
+}
+
+
+/* Introduction */
+.carousel {
+  /* display:block; */
+  max-height: 30rem;
+  overflow: hidden;
+}
+.carousel img {
+  position: relative;
+  margin: -5% auto;/* virtualy height needed turn don to zero */
+  width: 100%;/* height will follow within image ratio */
+  height:auto;/* to overrride attribute height set in tag */
+  vertical-align:middle;/* finalise vertical centering on baseline*/
+}
+.carousel-caption {
+  left: 10%;
+  top: 35%;
+  font-weight: 500;
+  color: #000000;
+}
+.carousel-caption h1 {
+  text-transform: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.btn.btn-learn {
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+.btn.btn-learn:hover {
+  color: #fff;
+  box-shadow: 1px 1px 2px #000000;
+}
+.tinted {
+  opacity: 0.5;
+  /* filter: brightness(75%) saturate(120%); */
+}
+
+
+/* About */
+.jumbotron {
+  background-color: #cfa3a3;
+}
+
+
+/* Skills */
+.Skills h5 {
+  font-size: 3rem;
+}
+a.skillcard:hover {
+  color: #cfa3a3;
+}
+
+
+/* Timeline */
+.card-subtitle, .card-header, .card-footer {
+  font-size: .8rem;
+}
+.card:hover {
+  box-shadow: 1px 1px 2px #000000;
+}
+
+
+/* Misc */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
