@@ -134,7 +134,7 @@ let resumeData = {
                        incremental tasks, and daily email/text reminders`,
         "tech":"Django, PostgreSQL, Docker, AWS",
         "link":"#",
-        "imgurl":"images/portfolio/portfolio-3.jpg",
+        "imgurl":"portfolio-3.jpg",
       },
       {
         "name":"CourseStar",
@@ -142,7 +142,7 @@ let resumeData = {
         "description":"A modern course management system designed for modern universities.",
         "tech":"ReactJS, ExpressJS, NodeJS, PostgreSQL, Heroku",
         "link":"https://github.com/j-alicia-long/Course-Star",
-        "imgurl":"images/portfolio/CourseStar.png"
+        "imgurl":"CourseStar.png"
       },
       {
         "name":"The Budgeteer",
@@ -150,7 +150,7 @@ let resumeData = {
         "description":"An Amazon Alexa skill that tells you how much to spend on takeout.",
         "tech":"Python, Amazon Alexa, AWS Lambda, DynamoDB",
         "link":"#",
-        "imgurl":"images/portfolio/Budgeteer.jpg"
+        "imgurl":"Budgeteer.jpg"
       },
       {
         "name":"My Virtual Closet",
@@ -158,7 +158,7 @@ let resumeData = {
         "description":"An android app that manages the clothing in your closet.",
         "tech":"Java, Android Studio, DarkSky API, Google Firebase, AWS S3",
         "link":"#",
-        "imgurl":"images/portfolio/VirtualCloset.png"
+        "imgurl":"VirtualCloset.png"
       },
       {
         "name":"Evolve",
@@ -168,7 +168,7 @@ let resumeData = {
                        "Inspired by my interest in AI and passion for Chemistry.",
         "tech":"Java, MongoDB, HTML/CSS, Javascript",
         "link":"https://devpost.com/software/evolve-d2i36",
-        "imgurl":"images/portfolio/evolve.png"
+        "imgurl":"evolve.png"
       },
     ]
   }

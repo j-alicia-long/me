@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 import { BreakpointProvider } from 'react-socks';
 
@@ -9,10 +10,18 @@ import Portfolio from './components/Portfolio';
 
 import {Container, Row, Col} from 'react-bootstrap';
 
+const Footer = () => (
+  <footer className="main-footer p-3">
+    <div class="copyright text-center">
+      Built with &#60;3 in ReactJS | <strong>Jennifer Long</strong> &copy; 2020
+    </div>
+  </footer>
+);
+
 class App extends Component {
   render() {
     return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename="/">
       <BreakpointProvider>
         <Container className="App" fluid={true}>
           <Row className="flex-xl-nowrap">
@@ -21,12 +30,13 @@ class App extends Component {
               <main>
                 <Switch>
                   <Route exact path="/" component={Homepage} />
-                  <Route exact path="/portfolio" component={Portfolio} />
+                  <Route path="/portfolio" component={Portfolio} />
                 </Switch>
               </main>
             </Col>
           </Row>
         </Container>
+        <Footer/>
       </BreakpointProvider>
       </HashRouter>
     );
@@ -34,3 +44,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+// <BrowserRouter basename={process.env.PUBLIC_URL}>

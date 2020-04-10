@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { Breakpoint } from 'react-socks';
 
 import resumeData from './resumeData';
 import {Col} from 'react-bootstrap';
-import {Nav, NavItem, Navbar, NavDropdown} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -96,7 +96,7 @@ const PanelHeader = ({name, role}) => (
       <img src={`${imgPath}/profile.jpg`} alt="avatar" class="profile-img" />
     </div>
     <div>
-      <Navbar.Brand href="/me">{name}</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">{name}</Navbar.Brand>
       <h6>{role}</h6>
     </div>
   </div>
@@ -104,12 +104,12 @@ const PanelHeader = ({name, role}) => (
 
 const PanelItems = () => (
   <>
-    <Nav.Link href="/me">About</Nav.Link>
+    <Nav.Link as={Link} to="/">About</Nav.Link>
     <Nav.Link href="Jennifer Long - Resume.pdf"
               target="_blank" rel="noopener noreferrer">
       Resume
     </Nav.Link>
-    <Nav.Link href="/me/portfolio">Portfolio</Nav.Link>
+    <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
   </>
 );
 
