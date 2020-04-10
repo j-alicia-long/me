@@ -70,10 +70,10 @@ let resumeData = {
         "Specialization":"Software Engineer Intern",
         "StartDate":"Jun 2019",
         "EndDate":"Aug 2019",
-        "Achievements":"Optimized issue triaging for the mobile features team "+
-                       "by creating a custom crash notification system. " +
-                       "Also developed a Fastlane plugin to lint the GitHub " +
-                       "CODEOWNERS file to expedit merging pull requests.",
+        "Achievements":`Optimized issue triaging for the mobile features team
+                       by creating a custom crash notification system.
+                       Also developed a Fastlane plugin to lint the GitHub
+                       CODEOWNERS file to expedit merging pull requests.`,
         "tech":"AWS Lambda, Python, Fastlane, Ruby, RSpec"
       },
       {
@@ -81,9 +81,10 @@ let resumeData = {
         "Specialization":"Undergraduate Research Assistant",
         "StartDate":"Sep 2018",
         "EndDate":"May 2019",
-        "Achievements":"Frontend feature developer for the Refugee Crisis Simulator, " +
-                       "used to train over 1000 Congressmen and policy " +
-                       "students from over 150 universities.",
+        "Achievements":`Frontend feature developer for the Refugee Crisis
+                        Simulator, used to train over 1000 government
+                        representatives and policy students from 150+
+                        universities.`,
         "tech":"ReactJS, Javascript, Sass"
       },
       {
@@ -91,9 +92,9 @@ let resumeData = {
         "Specialization":"Technical Intern",
         "StartDate":"May 2018",
         "EndDate":"Aug 2018",
-        "Achievements":"Designed and prototyped a novel web-based geo-temporal "+
-                       "radar data visualization tool, " +
-                       "for MTI data analysts to construct intelligence reports.",
+        "Achievements":`Designed and prototyped a novel web-based geo-temporal
+                        radar data visualization tool, for MTI data analysts to
+                        construct intelligence reports.`,
         "tech":"ReactJS, Deck.gl, Spring Boot, REST API"
       }
     ],
@@ -126,7 +127,42 @@ let resumeData = {
     ],
     "portfolio":[
       {
+        "name":"Motimeter",
+        "date":"January 2020",
+        "description":`A goal tracker that motivates users to set SMARTR goals
+                       and track progress via KPI dashboard, completion of
+                       incremental tasks, and daily email/text reminders`,
+        "tech":"Django, PostgreSQL, Docker, AWS",
+        "link":"#",
+        "imgurl":"images/portfolio/portfolio-3.jpg",
+      },
+      {
+        "name":"CourseStar",
+        "date":"November 2019",
+        "description":"A modern course management system designed for modern universities.",
+        "tech":"ReactJS, ExpressJS, NodeJS, PostgreSQL, Heroku",
+        "link":"https://github.com/j-alicia-long/Course-Star",
+        "imgurl":"images/portfolio/CourseStar.png"
+      },
+      {
+        "name":"The Budgeteer",
+        "date":"June 2019",
+        "description":"An Amazon Alexa skill that tells you how much to spend on takeout.",
+        "tech":"Python, Amazon Alexa, AWS Lambda, DynamoDB",
+        "link":"#",
+        "imgurl":"images/portfolio/Budgeteer.jpg"
+      },
+      {
+        "name":"My Virtual Closet",
+        "date":"May 2017",
+        "description":"An android app that manages the clothing in your closet.",
+        "tech":"Java, Android Studio, DarkSky API, Google Firebase, AWS S3",
+        "link":"#",
+        "imgurl":"images/portfolio/VirtualCloset.png"
+      },
+      {
         "name":"Evolve",
+        "date":"March 2016",
         "description":"A mobile-friendly web app with a virtual, friendly " +
                        "AI AP Chemistry tutor. " +
                        "Inspired by my interest in AI and passion for Chemistry.",
@@ -134,34 +170,6 @@ let resumeData = {
         "link":"https://devpost.com/software/evolve-d2i36",
         "imgurl":"images/portfolio/evolve.png"
       },
-      {
-        "name":"My Virtual Closet",
-        "description":"An android app that manages the clothing in your closet.",
-        "tech":"Java, Android Studio, DarkSky API, Google Firebase, AWS S3",
-        "link":"#",
-        "imgurl":"images/portfolio/VirtualCloset.png"
-      },
-      {
-        "name":"The Budgeteer",
-        "description":"An Amazon Alexa skill that tells you how much to spend on takeout.",
-        "tech":"Python, Amazon Alexa, AWS Lambda, DynamoDB",
-        "link":"#",
-        "imgurl":"images/portfolio/Budgeteer.jpg"
-      },
-      {
-        "name":"CourseStar",
-        "description":"A new course management system designed for universities.",
-        "tech":"ReactJS, ExpressJS, NodeJS, PostgreSQL, Heroku",
-        "link":"https://github.com/j-alicia-long/Course-Star",
-        "imgurl":"images/portfolio/CourseStar.png"
-      },
-      {
-        "name":"TBD",
-        "description":"A new serverless project is in the works! Details to come.",
-        "tech":"AWS",
-        "link":"#",
-        "imgurl":"images/portfolio/portfolio-3.jpg"
-      }
     ]
   }
 

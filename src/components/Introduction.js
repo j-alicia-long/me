@@ -22,7 +22,7 @@ class Introduction extends Component {
               <h1>Hi! <br />I'm Jennifer</h1>
               <h5 className="my-4">
                 <a className="btn btn-dark btn-learn"
-                   href="Jennifer Long - Resume.pdf"
+                   href={`${process.env.PUBLIC_URL}/Jennifer Long - Resume.pdf`}
                    target="_blank" rel="noopener noreferrer">
                   <strong>VIEW CV </strong>
                   <FontAwesomeIcon icon={faDownload} />

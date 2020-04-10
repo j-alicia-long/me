@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import resumeData from './resumeData';
 
 class Portfolio extends Component {
@@ -17,13 +17,14 @@ class Portfolio extends Component {
                 <Card.Title>
                   <a href={project.link}><h4>{project.name}</h4></a>
                 </Card.Title>
+                <Card.Subtitle><h6>{project.date}</h6></Card.Subtitle>
                 <Card.Text>
                   {project.description}
                 </Card.Text>
-                <Card.Footer>{project.tech}</Card.Footer>
               </Card.Body>
+              <Card.Footer>{project.tech}</Card.Footer>
             </Card>
-            <h2 className="m-4"> -- </h2>
+            <br/>
           </>
         ))}
       </div>

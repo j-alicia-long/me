@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 
-import resumeData from './resumeData';
 
 class Timeline extends Component {
   render() {

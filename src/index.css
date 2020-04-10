@@ -135,17 +135,10 @@ a.skillcard:hover {
 
 .Experience .card {
   border: 1px solid #e9afb5 !important;
-  color: white;
 }
 .Experience .card-header {
   background-color: #ce4b58;
-}
-.Experience .card-body {
-  background-color: #d9737d;
-}
-.Experience .card-footer {
-  background-color: #ce4b58;
-  /* color: #333; */
+  color: white;
 }
 
 .Education .card {
