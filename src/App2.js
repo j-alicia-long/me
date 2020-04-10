@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+// import logo from './logo.svg';
 import './App.css';
-import { BreakpointProvider } from 'react-socks';
+import { Breakpoint, BreakpointProvider } from 'react-socks';
 
 import SidePanel from './components/SidePanel';
 import Homepage from './components/Homepage';
@@ -12,7 +13,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename='/me'>
       <BreakpointProvider>
         <Container className="App" fluid={true}>
           <Row className="flex-xl-nowrap">
@@ -28,7 +29,7 @@ class App extends Component {
           </Row>
         </Container>
       </BreakpointProvider>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

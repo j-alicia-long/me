@@ -4,6 +4,7 @@ import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
+const imgPath = process.env.PUBLIC_URL + '/images/';
 
 class Introduction extends Component {
   render() {
@@ -14,8 +15,8 @@ class Introduction extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100 tinted"
-              src="images/bubbles.jpg"
-              alt="Cover Photo"
+              src={`${imgPath}/cover.jpg`}
+              alt="Jumbotron"
             />
             <Carousel.Caption className="text-left">
               <h1>Hi! <br />I'm Jennifer</h1>

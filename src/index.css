@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Lora', serif !important;
+  font-family: 'Oxygen', serif !important;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Ubuntu", "Lora", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow-x: hidden; */
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -13,7 +14,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
  font-weight: 300;
  text-transform: uppercase;
 }
-h6 {
+h4, h6 {
   text-transform: none;
 }
 
@@ -33,7 +34,7 @@ h6 {
   align-items: center;
 }
 .panel-header-expanded h6 {
-  color: #cfa3a3;
+  color: #e9afb5;
 }
 
 .image-cropper {
@@ -56,7 +57,7 @@ h6 {
   width: auto;
 }
 .contact-info {
- font-family: 'Lora', serif;
+ font-family: 'Oxygen', serif;
  text-transform: lowercase;
 }
 .social-links {
@@ -99,14 +100,16 @@ h6 {
   box-shadow: 1px 1px 2px #000000;
 }
 .tinted {
-  opacity: 0.5;
-  /* filter: brightness(75%) saturate(120%); */
+  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,.25));
+  filter: brightness(110%) saturate(80%);
+  /* opacity: 0.7; */
 }
 
 
 /* About */
 .jumbotron {
-  background-color: #cfa3a3;
+  background-color: #ce4b58;
+  color: white;
 }
 
 
@@ -115,18 +118,45 @@ h6 {
   font-size: 3rem;
 }
 a.skillcard:hover {
-  color: #cfa3a3;
+  color: #ce4b58;
 }
 
 
 /* Timeline */
+.card {
+  height: 90%;
+}
 .card-subtitle, .card-header, .card-footer {
   font-size: .8rem;
 }
 .card:hover {
-  box-shadow: 1px 1px 2px #000000;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
+.Experience .card {
+  border: 1px solid #e9afb5 !important;
+  color: white;
+}
+.Experience .card-header {
+  background-color: #ce4b58;
+}
+.Experience .card-body {
+  background-color: #d9737d;
+}
+.Experience .card-footer {
+  background-color: #ce4b58;
+  /* color: #333; */
+}
+
+.Education .card {
+  border: 1px solid #e9afb5 !important;
+}
+.Education .card-body {
+  background-color: #d9737d;
+}
+.Education .card-header {
+  background-color: #ce4b58;
+}
 
 /* Misc */
 code {

@@ -13,6 +13,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(fab, fas, faEnvelope);
 
+const imgPath = process.env.PUBLIC_URL + '/images/';
 
 const navStyle = {
   'backgroundColor': '#343a40',
@@ -92,7 +93,7 @@ class SidePanel extends Component {
 const PanelHeader = ({name, role}) => (
   <div className="panel-header my-2">
     <div class="image-cropper">
-      <img src="images/columns_square.jpg" alt="avatar" class="profile-img" />
+      <img src={`${imgPath}/profile.jpg`} alt="avatar" class="profile-img" />
     </div>
     <div>
       <Navbar.Brand href="/me">{name}</Navbar.Brand>

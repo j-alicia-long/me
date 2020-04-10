@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
+import { Container, Row, Col } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
+
 import resumeData from './resumeData';
 
 class Timeline extends Component {
@@ -8,40 +10,44 @@ class Timeline extends Component {
     const { resumeData: { education, work } } = this.props;
 
     return (
-      <div className="Timeline p-4">
-        <h2 className="text-center"><strong>Timeline</strong></h2>
-        {work.map((item, i) => (
-          <>
-          <Card className="my-4" border="danger">
-            <Card.Header>{item.StartDate} - {item.EndDate}</Card.Header>
-            <Card.Body>
-              <Card.Title><h4>{item.Name}</h4></Card.Title>
-              <Card.Subtitle><h6>{item.Specialization}</h6></Card.Subtitle>
-              <Card.Text className="mt-4">
-                {item.Achievements}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>{item.tech}</Card.Footer>
-          </Card>
-          <h3 className="text-center"> | </h3>
-          </>
-        ))}
-        {education.map((item, i) => (
-          <>
-          <Card className="my-4" bg="dark" border="danger" text="white">
-            <Card.Header>{item.StartDate} - {item.EndDate}</Card.Header>
-            <Card.Body>
-              <Card.Title><h4>{item.Name}</h4></Card.Title>
-              <Card.Subtitle><h6>{item.Specialization}</h6></Card.Subtitle>
-              <Card.Text className="mt-4">
-                {item.Achievements}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <h3 className="text-center"> | </h3>
-          </>
-        ))}
-      </div>
+      <Container className="Timeline p-4">
+        <h2 className="text-center">Experience</h2>
+        <Row className="Experience mb-4">
+          {work.map((item, i) => (
+            <Col className="mb-4" xl="4" lg="6">
+              <Card className="my-4" border="light">
+                <Card.Header>{item.StartDate} - {item.EndDate}</Card.Header>
+                <Card.Body>
+                  <Card.Title><h4>{item.Name}</h4></Card.Title>
+                  <Card.Subtitle><h6>{item.Specialization}</h6></Card.Subtitle>
+                  <Card.Text className="mt-4">
+                    {item.Achievements}
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer>{item.tech}</Card.Footer>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        <br/>
+        <h2 className="text-center">Education</h2>
+        <Row className="Education mb-4">
+          {education.map((item, i) => (
+            <Col sm="6">
+              <Card className="my-4" bg="dark" border="secondary" text="white">
+                <Card.Header>{item.StartDate} - {item.EndDate}</Card.Header>
+                <Card.Body>
+                  <Card.Title><h4>{item.Name}</h4></Card.Title>
+                  <Card.Subtitle><h6>{item.Specialization}</h6></Card.Subtitle>
+                  <Card.Text className="mt-4">
+                    {item.Achievements}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     );
   }
 }

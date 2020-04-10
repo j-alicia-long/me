@@ -30,12 +30,19 @@ let resumeData = {
           "iconName":"twitter-square"
         }
       ],
-    "aboutme":"I'm a third-year student at the Univerity of Virginia, pursuing "+
-              "my B.S. Computer Science degree. " +
-              "I'm a self taught Full Stack Software Engineer, currently diving "+
-              "deeper into Cloud Computing (AWS) and Machine Learning. "+
-              "I believe that to be successful in life, one needs to strive to "+
-              "to be the best version of themselves and push towards their goals.",
+    "aboutme":`I'm a third-year student at the University of Virginia, pursuing
+              my B.S. Computer Science degree.
+              I'm a self-taught Full Stack Software Engineer, familiar with
+              frameworks such as ReactJS, Django, PostgreSQL, Docker, and AWS
+              services. I’m currently learning more about full-stack deployment
+              including container-orchestration with Kubernetes and CI/CD tools
+              like TravisCI and Jenkins.`,
+    "aboutme2":`I’m passionate about social equality and educational outreach.
+              Our lives are shaped by the support of the community around us,
+              and we all have a part to play in paving the future. Every
+              contribution makes an impact, no matter how small. I believe
+              that to be successful in life, one needs to strive to be
+              the best version of themselves and push towards their goals.`,
     "email":"rz5sc@virginia.edu",
     "address":"Charlottesville, Virginia",
     "website":"https://j-alicia-long.github.io/me",
@@ -93,7 +100,7 @@ let resumeData = {
     "skillsDescription":"My top skills",
     "skills":[
       {
-        "skillname":"Python",
+        "skillname":"Python/Django",
         "iconName":["fab", "python"]
       },
       {
@@ -105,16 +112,16 @@ let resumeData = {
         "iconName":["fas", "gem"]
       },
       {
+        "skillname":"ReactJS",
+        "iconName":["fab", "react"]
+      },
+      {
         "skillname":"PostgreSQL",
         "iconName":["fas", "database"]
       },
       {
         "skillname":"AWS",
         "iconName":["fab", "aws"]
-      },
-      {
-        "skillname":"ReactJS",
-        "iconName":["fab", "react"]
       },
     ],
     "portfolio":[
