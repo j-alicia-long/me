@@ -1,6 +1,6 @@
 # PORTFOLIO-APP
 
-This my (Jennifer Long) SWE portfolio website, built in ReactJS with react-bootstrap. Take a look!
+Hi, I'm Jennifer! I'm a full-stack web developer in the midst of getting my B.S. Computer Science degree. This my coding portfolio website, built from scratch in ReactJS with react-bootstrap. Take a look!
 
 ### Running Locally
 To run this project locally follow these steps:
@@ -12,4 +12,4 @@ To run this project locally follow these steps:
 ### Deployment
 To deploy this site to gh-pages, run `npm run deploy`.
 
-##### Deployed app: https://j-alicia-long.github.io/me
+##### Deployed on: https://j-alicia-long.github.io/me

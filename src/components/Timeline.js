@@ -51,26 +51,4 @@ class Timeline extends Component {
   }
 }
 
-// <div className="Timeline">
-//   {work.map((item, i) => (
-//     <div>
-//       <p>{item.Name}</p>
-//       <p>{item.Specialization}</p>
-//       <p>{item.StartDate}</p>
-//       <p>{item.EndDate}</p>
-//       <p>{item.Achievements}</p>
-//       <p>{item.tech}</p>
-//     </div>
-//   ))}
-//   {education.map((item, i) => (
-//     <div>
-//       <p>{item.Name}</p>
-//       <p>{item.Specialization}</p>
-//       <p>{item.StartDate}</p>
-//       <p>{item.EndDate}</p>
-//       <p>{item.Achievements}</p>
-//     </div>
-//   ))}
-// </div>
-
 export default Timeline;
