@@ -107,7 +107,7 @@ let resumeData = {
           "iconName":["fab", "python"]
         },
         {
-          "skillName":"Javasript",
+          "skillName":"JavaScript",
           "iconName":["fab", "js"]
         },
         {
@@ -119,7 +119,7 @@ let resumeData = {
           "iconName":["fab", "java"]
         },
         {
-          "skillName":"C/C++",
+          "skillName":"C & C++",
           "iconName":["fas", "copyright"]
         },
       ],
