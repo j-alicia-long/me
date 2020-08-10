@@ -13,7 +13,7 @@ class Homepage extends Component {
       <div className="Homepage">
         <Introduction/>
         <About resumeData={resumeData}/>
-        <Skills skillList={resumeData.skills}/>
+        <Skills skills={resumeData.skills}/>
         <Timeline resumeData={resumeData}/>
       </div>
     );

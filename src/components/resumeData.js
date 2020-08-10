@@ -1,13 +1,13 @@
 let resumeData = {
     "imagebaseurl":"https://j-alicia-long.github.io/me",
     "name": "Jennifer Long",
-    "role": "Full Stack Developer and Cloud Engineer",
+    "role": "Full-Stack Software Engineer",
     "linkedinId":"j-alicia-long",
     "skypeid": "Jenny246844",
-    "roleDescription": "I like dabbling in various aspects of frontend and " +
-                       "backend development, especially learning about new " +
-                       "technologies, building pet projects, or playing games " +
-                       "in my free time.",
+    "roleDescription": `I like dabbling in various aspects of frontend and
+                       backend development, especially learning about new
+                       technologies, building pet projects, or playing games
+                       in my free time.`,
     "socialLinks":[
         {
           "name":"linkedin",
@@ -98,33 +98,60 @@ let resumeData = {
         "tech":"ReactJS, Deck.gl, Spring Boot, REST API"
       }
     ],
-    "skillsDescription":"My top skills",
-    "skills":[
-      {
-        "skillname":"Python/Django",
-        "iconName":["fab", "python"]
-      },
-      {
-        "skillname":"Java",
-        "iconName":["fab", "java"]
-      },
-      {
-        "skillname":"Docker",
-        "iconName":["fab", "docker"]
-      },
-      {
-        "skillname":"ReactJS",
-        "iconName":["fab", "react"]
-      },
-      {
-        "skillname":"PostgreSQL",
-        "iconName":["fas", "database"]
-      },
-      {
-        "skillname":"AWS",
-        "iconName":["fab", "aws"]
-      },
-    ],
+    "skills": {
+      "topSkills":[
+        {
+          "skillname":"Python/Django",
+          "iconName":["fab", "python"]
+        },
+        {
+          "skillname":"ReactJS",
+          "iconName":["fab", "react"]
+        },
+        {
+          "skillname":"Java",
+          "iconName":["fab", "java"]
+        },
+        {
+          "skillname":"Docker",
+          "iconName":["fab", "docker"]
+        },
+        {
+          "skillname":"PostgreSQL",
+          "iconName":["fas", "database"]
+        },
+        {
+          "skillname":"AWS",
+          "iconName":["fab", "aws"]
+        },
+      ],
+      "subSkills":[
+        {
+          "skillname":"Python/Django",
+          "iconName":["fab", "python"]
+        },
+        {
+          "skillname":"ReactJS",
+          "iconName":["fab", "react"]
+        },
+        {
+          "skillname":"Java",
+          "iconName":["fab", "java"]
+        },
+        {
+          "skillname":"Docker",
+          "iconName":["fab", "docker"]
+        },
+        {
+          "skillname":"PostgreSQL",
+          "iconName":["fas", "database"]
+        },
+        {
+          "skillname":"AWS",
+          "iconName":["fab", "aws"]
+        },
+      ]
+    },
     "portfolio":[
       {
         "name":"Motimeter",

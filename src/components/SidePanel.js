@@ -105,7 +105,7 @@ const PanelHeader = ({name, role}) => (
 const PanelItems = () => (
   <>
     <Nav.Link as={Link} to="/">About</Nav.Link>
-    <Nav.Link href="Jennifer Long - Resume.pdf"
+    <Nav.Link href={`${process.env.PUBLIC_URL}/Jennifer Long - Resume.pdf`}
               target="_blank" rel="noopener noreferrer">
       Resume
     </Nav.Link>

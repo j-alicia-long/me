@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const imgPath = process.env.PUBLIC_URL + '/images/';
 
@@ -11,7 +10,7 @@ class Introduction extends Component {
 
     return (
       <div className="Intro">
-        <Carousel>
+        <Carousel controls={false}>
           <Carousel.Item>
             <img
               className="d-block w-100 tinted"
@@ -25,7 +24,7 @@ class Introduction extends Component {
                    href={`${process.env.PUBLIC_URL}/Jennifer Long - Resume.pdf`}
                    target="_blank" rel="noopener noreferrer">
                   <strong>VIEW CV </strong>
-                  <FontAwesomeIcon icon={faDownload} />
+                  <FontAwesomeIcon icon={["fa", "download"]} />
                 </a>
               </h5>
             </Carousel.Caption>
