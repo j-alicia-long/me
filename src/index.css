@@ -113,15 +113,6 @@ h4, h6 {
 }
 
 
-/* Skills */
-.Skills h5 {
-  font-size: 3rem;
-}
-a.skillcard:hover {
-  color: #ce4b58;
-}
-
-
 /* Timeline */
 .card {
   height: 90%;

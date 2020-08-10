@@ -99,57 +99,81 @@ let resumeData = {
       }
     ],
     "skills": {
-      "topSkills":[
+      "languages":[
         {
-          "skillname":"Python/Django",
+          "skillName":"Python",
           "iconName":["fab", "python"]
         },
         {
-          "skillname":"ReactJS",
-          "iconName":["fab", "react"]
+          "skillName":"Javasript",
+          "iconName":["fab", "js"]
         },
         {
-          "skillname":"Java",
+          "skillName":"Ruby",
+          "iconName":["fas", "gem"]
+        },
+        {
+          "skillName":"Java",
           "iconName":["fab", "java"]
         },
         {
-          "skillname":"Docker",
+          "skillName":"C/C++",
+          "iconName":["fas", "copyright"]
+        },
+      ],
+      "primarySkills":[
+        {
+          "skillName":"Django",
+          "iconName":["fab", "python"]
+        },
+        {
+          "skillName":"ReactJS",
+          "iconName":["fab", "react"]
+        },
+        {
+          "skillName":"NodeJS",
+          "iconName":["fab", "node-js"]
+        },
+        {
+          "skillName":"Docker",
           "iconName":["fab", "docker"]
         },
         {
-          "skillname":"PostgreSQL",
+          "skillName":"PostgreSQL",
           "iconName":["fas", "database"]
         },
         {
-          "skillname":"AWS",
+          "skillName":"AWS",
           "iconName":["fab", "aws"]
         },
       ],
-      "subSkills":[
+      "secondarySkills":[
+
         {
-          "skillname":"Python/Django",
-          "iconName":["fab", "python"]
+          "skillName":"Spring",
+          "iconName":["fas", "leaf"]
         },
         {
-          "skillname":"ReactJS",
-          "iconName":["fab", "react"]
+          "skillName":"Selenium",
+          "iconName":["fa", "code"]
         },
         {
-          "skillname":"Java",
-          "iconName":["fab", "java"]
+          "skillName":"ASP.NET Core",
+          "iconName":["fas", "copyright"]
         },
         {
-          "skillname":"Docker",
-          "iconName":["fab", "docker"]
-        },
-        {
-          "skillname":"PostgreSQL",
+          "skillName":"MongoDB",
           "iconName":["fas", "database"]
         },
         {
-          "skillname":"AWS",
-          "iconName":["fab", "aws"]
+          "skillName":"Heroku",
+          "iconName":["fab", "korvue"]
         },
+        {
+          "skillName":"TravisCI",
+          "iconName":["fa", "text-width"]
+        },
+
       ]
     },
     "portfolio":[

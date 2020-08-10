@@ -1,6 +1,6 @@
 # PORTFOLIO-APP
 
-Hi, I'm Jennifer! I'm a full-stack web developer in the midst of getting my B.S. Computer Science degree. This my coding portfolio website, built from scratch in ReactJS with react-bootstrap. Take a look!
+Hi, I'm Jennifer! I'm a full-stack web developer in the midst of getting my B.S. Computer Science degree. This my coding portfolio website, built from scratch in ReactJS with react-bootstrap and styled-components. Take a look!
 
 ### Running Locally
 To run this project locally follow these steps:
