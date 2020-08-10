@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import { Container, Jumbotron } from 'react-bootstrap';
 
+const jumbotronStyle = {
+  'backgroundColor': '#ce4b58',
+  'color': 'white',
+};
+
 
 class About extends Component {
   render() {
@@ -9,7 +14,7 @@ class About extends Component {
 
     return (
       <div className="About mb-4">
-        <Jumbotron fluid>
+        <Jumbotron style={jumbotronStyle} fluid>
           <Container>
             <h3>About Me</h3>
             <p>{aboutme}</p>

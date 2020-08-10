@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import styled from "styled-components";
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { Accordion, Card, Button } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from "styled-components";
 
 const accordionStyle = {
   'backgroundColor': '#f0f0f0',

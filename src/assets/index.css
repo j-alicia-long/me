@@ -105,44 +105,6 @@ h4, h6 {
   /* opacity: 0.7; */
 }
 
-
-/* About */
-.jumbotron {
-  background-color: #ce4b58;
-  color: white;
-}
-
-
-/* Timeline */
-.card {
-  height: 90%;
-}
-.card-subtitle, .card-header, .card-footer {
-  font-size: .8rem;
-}
-.card:hover {
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-}
-
-.Experience .card {
-  border: 1px solid #e9afb5 !important;
-}
-.Experience .card-header {
-  background-color: #ce4b58;
-  color: white;
-}
-
-.Education .card {
-  border: 1px solid #e9afb5 !important;
-}
-.Education .card-body {
-  background-color: #d9737d;
-}
-.Education .card-header {
-  background-color: #ce4b58;
-}
-
-/* Timeline */
 footer{
   background-color: #333;
   color: white;
