@@ -109,8 +109,8 @@ let resumeData = {
         "iconName":["fab", "java"]
       },
       {
-        "skillname":"Ruby",
-        "iconName":["fas", "gem"]
+        "skillname":"Docker",
+        "iconName":["fab", "docker"]
       },
       {
         "skillname":"ReactJS",
