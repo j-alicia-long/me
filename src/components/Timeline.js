@@ -18,7 +18,7 @@ class Timeline extends Component {
                 <Card.Header>{item.StartDate} - {item.EndDate}</Card.Header>
                 <Card.Body>
                   <Card.Title><h4>{item.Name}</h4></Card.Title>
-                  <Card.Subtitle><h6>{item.Specialization}</h6></Card.Subtitle>
+                  <Card.Subtitle><h6>{item.Role}</h6></Card.Subtitle>
                   <Card.Text className="mt-4">
                     {item.Achievements}
                   </Card.Text>

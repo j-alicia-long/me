@@ -66,35 +66,37 @@ let resumeData = {
     ],
     "work":[
       {
-        "Name":"Capital One",
-        "Specialization":"Software Engineer Intern",
-        "StartDate":"Jun 2019",
-        "EndDate":"Aug 2019",
-        "Achievements":`Optimized issue triaging for the mobile features team
-                       by creating a custom crash notification system.
-                       Also developed a Fastlane plugin to lint the GitHub
-                       CODEOWNERS file to expedit merging pull requests.`,
-        "tech":"AWS Lambda, Python, Fastlane, Ruby, RSpec"
+        "Name":"VMware",
+        "Role":"Software Developer Intern",
+        "StartDate":"Jun 2020",
+        "EndDate":"Aug 2020",
+        "Achievements":`Created a RESTful API microservice that allows IT admins
+                        to validate workflows for device setup and installation.
+                        Saved enterprise clients 2-4 hours of time per
+                        installation workflow for each device.`,
+        "tech":"C#, ASP.NET Core, XUnit, Bamboo CI, Docker"
       },
       {
-        "Name":"UVA Center for Leadership Simulation & Gaming",
-        "Specialization":"Undergraduate Research Assistant",
-        "StartDate":"Sep 2018",
-        "EndDate":"May 2019",
-        "Achievements":`Frontend feature developer for the Refugee Crisis
-                        Simulator, used to train over 1000 government
-                        representatives and policy students from 150+
-                        universities.`,
-        "tech":"ReactJS, Javascript, Sass"
+        "Name":"Capital One",
+        "Role":"Software Engineer Intern",
+        "StartDate":"Jun 2019",
+        "EndDate":"Aug 2019",
+        "Achievements":`Developed a direct contributor notification system for
+                        application crashes, optimizing crash triaging response
+                        time by 8 hours for the mobile features team.
+                        Expedited code reviews on pull requests with a Ruby
+                        Fastlane plugin to lint the GitHub CODEOWNERS file.`,
+        "tech":"AWS Lambda, Python, Slack & Jira API, Ruby, Fastlane, RSpec"
       },
       {
         "Name":"Radiant Solutions",
-        "Specialization":"Technical Intern",
+        "Role":"Technical Intern",
         "StartDate":"May 2018",
         "EndDate":"Aug 2018",
         "Achievements":`Designed and prototyped a novel web-based geo-temporal
-                        radar data visualization tool, for MTI data analysts to
-                        construct intelligence reports.`,
+                        radar data visualization tool for MTI data analysts to
+                        construct intelligence reports on proprietary government
+                        datasets.`,
         "tech":"ReactJS, Deck.gl, Spring Boot, REST API"
       }
     ],
@@ -148,7 +150,6 @@ let resumeData = {
         },
       ],
       "secondarySkills":[
-
         {
           "skillName":"Spring",
           "iconName":["fas", "leaf"]
@@ -173,7 +174,6 @@ let resumeData = {
           "skillName":"TravisCI",
           "iconName":["fa", "text-width"]
         },
-
       ]
     },
     "portfolio":[
