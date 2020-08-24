@@ -49,24 +49,28 @@ let resumeData = {
     "education":[
       {
         "Name":"University of Virginia",
+        "Img":"uva-rotunda.jpg",
         "Specialization":"B.S. Computer Science, Cognitive Science",
         "StartDate":"Aug 2017",
         "EndDate":"May 2021",
-        "Achievements":"Exec Board and Philanthropy Chair of Sigma Psi Zeta, "+
-                       "Student Workers' Union, Asian Leaders Council, CMB Color Guard"
+        "Achievements": ["Sigma Psi Zeta at UVA (Exec Board, Philanthropy Chair)",
+                         "Asian Leaders Council (Representative)",
+                         "Student Workers' Union", "CMB Color Guard"]
       },
       {
         "Name":"Thomas Jefferson High School for Science & Technology",
-        "Specialization":"Computer Science, Chemistry",
+        "Img":"tjhsst-dome.jpg",
+        "Specialization":"Computer Science & Chemistry Concentration",
         "StartDate":"Sep 2013",
         "EndDate":"Jun 2017",
-        "Achievements":"President of Tomorrow's Women in Science and Technology, "+
-                       "Varsity Cheerleading, TJMC Color Guard"
+        "Achievements": ["Tomorrow's Women in Science and Technology (President)",
+                         "Varsity Cheerleading", "TJMC Color Guard"]
       }
     ],
     "work":[
       {
         "Name":"VMware",
+        "Img":"vmware-office.jpg",
         "Role":"Software Developer Intern",
         "StartDate":"Jun 2020",
         "EndDate":"Aug 2020",
@@ -78,6 +82,7 @@ let resumeData = {
       },
       {
         "Name":"Capital One",
+        "Img":"c1-office.jpg",
         "Role":"Software Engineer Intern",
         "StartDate":"Jun 2019",
         "EndDate":"Aug 2019",
@@ -90,6 +95,7 @@ let resumeData = {
       },
       {
         "Name":"Radiant Solutions",
+        "Img":"rs-header.jpeg",
         "Role":"Technical Intern",
         "StartDate":"May 2018",
         "EndDate":"Aug 2018",
