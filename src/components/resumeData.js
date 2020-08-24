@@ -178,26 +178,36 @@ let resumeData = {
     },
     "portfolio":[
       {
+        "name":"VMAware: A D&I Hub",
+        "date":"AUG 2020",
+        "description":`A dashboard that promotes transparency for VMware’s
+                       progress in diversity & inclusion goals through data
+                       visualizations of survey sentiment analysis (NLP)`,
+        "tech":"JavaScript, Python, MERN stack (MongoDB, Express, React, Node.js), Heroku, Tableau, NLTK, Twitch",
+        "link":"https://github.com/j-alicia-long/SunShine",
+        "imgurl":"vmaware-dashboard.png",
+      },
+      {
         "name":"Motimeter",
-        "date":"January 2020",
+        "date":"JAN 2020",
         "description":`A goal tracker that motivates users to set SMARTR goals
                        and track progress via KPI dashboard, completion of
                        incremental tasks, and daily email/text reminders`,
-        "tech":"Django, PostgreSQL, Docker, AWS",
+        "tech":"Python, Django, PostgreSQL, Docker, AWS EC2",
         "link":"#",
         "imgurl":"portfolio-3.jpg",
       },
       {
         "name":"CourseStar",
-        "date":"November 2019",
+        "date":"NOV 2019",
         "description":"A modern course management system designed for modern universities.",
-        "tech":"ReactJS, ExpressJS, NodeJS, PostgreSQL, Heroku",
+        "tech":"JavaScript, ReactJS, ExpressJS, NodeJS, PostgreSQL, Heroku",
         "link":"https://github.com/j-alicia-long/Course-Star",
         "imgurl":"CourseStar.png"
       },
       {
         "name":"The Budgeteer",
-        "date":"June 2019",
+        "date":"JUN 2019",
         "description":"An Amazon Alexa skill that tells you how much to spend on takeout.",
         "tech":"Python, Amazon Alexa, AWS Lambda, DynamoDB",
         "link":"#",
@@ -205,7 +215,7 @@ let resumeData = {
       },
       {
         "name":"My Virtual Closet",
-        "date":"May 2017",
+        "date":"MAY 2017",
         "description":"An android app that manages the clothing in your closet.",
         "tech":"Java, Android Studio, DarkSky API, Google Firebase, AWS S3",
         "link":"#",
@@ -213,11 +223,11 @@ let resumeData = {
       },
       {
         "name":"Evolve",
-        "date":"March 2016",
-        "description":"A mobile-friendly web app with a virtual, friendly " +
-                       "AI AP Chemistry tutor. " +
-                       "Inspired by my interest in AI and passion for Chemistry.",
-        "tech":"Java, MongoDB, HTML/CSS, Javascript",
+        "date":"MAR 2016",
+        "description":`A mobile-friendly web app with a virtual, friendly
+                       AI AP Chemistry tutor.
+                       Inspired by my interest in AI and passion for Chemistry.`,
+        "tech":"Java, MongoDB, HTML/CSS, JavaScript",
         "link":"https://devpost.com/software/evolve-d2i36",
         "imgurl":"evolve.png"
       },

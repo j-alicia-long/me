@@ -8,13 +8,17 @@ const imgPath = process.env.PUBLIC_URL + "/images/portfolio/";
 
 // Styled components
 const StyledCard = styled(Card)`
-  height: 90%;
-  border: 1px solid #e9afb5 !important;
+  height: 95%;
+  font-size: .9rem;
   &:hover {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
   }
   .card-subtitle, .card-header, .card-footer {
-    font-size: .8rem;
+    font-size: .7rem;
+  }
+  .card-footer {
+    background-color: #464e57;
+    color: white;
   }
 `;
 
@@ -24,10 +28,10 @@ class Portfolio extends Component {
 
     return (
       <Container className="Portfolio p-4 text-center">
-        <h2 className="mt-4">Portfolio</h2>
+        <h2 className="my-4">Portfolio</h2>
         <Row>
           {resumeData.portfolio.map((project, i) => (
-            <Col lg={{ span: 8, offset: 2 }}>
+            <Col xl="4" lg="6">
               <ProjectCard project={project}/>
               <br/>
             </Col>
@@ -39,14 +43,15 @@ class Portfolio extends Component {
 }
 
 const ProjectCard = ({project}) => (
-  <StyledCard className="m-4">
+  <StyledCard className="m-2">
     <Card.Img variant="top" src={imgPath+project.imgurl} />
     <Card.Body>
       <Card.Title>
         <a href={project.link}><h4>{project.name}</h4></a>
       </Card.Title>
       <Card.Subtitle><h6>{project.date}</h6></Card.Subtitle>
-      <Card.Text>
+      <hr/>
+      <Card.Text className="text-left">
         {project.description}
       </Card.Text>
     </Card.Body>
