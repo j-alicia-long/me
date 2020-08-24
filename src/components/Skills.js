@@ -19,21 +19,16 @@ const StyledSkillIcon = styled.div`
   }
 `;
 
-const StyledLangIcon = styled(StyledSkillIcon)`
-  font-size: 2rem;
-  width: 3em;
-`;
-
 
 class Skills extends Component {
   render() {
     const { skills } = this.props;
 
     return (
-      <Container className="Skills my-4 text-center">
+      <Container className="Skills my-4 px-4 text-center">
 
         <h2><strong>Skills</strong></h2>
-        <Row>
+        <Row className="px-4">
           {skills.primarySkills.map((skill, i) => (
             <Col className="py-4" xl="2" md="4" sm="6">
               <SkillIcon skill={skill}/>
@@ -41,30 +36,35 @@ class Skills extends Component {
           ))}
         </Row>
 
-        <Row>
+        <Row className="px-4">
           <Accordion className="w-100">
-            <Card style={accordionStyle}>
+            <Card style={accordionStyle} className="px-4">
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <h1 style={{'color': 'black'}}><FontAwesomeIcon icon={["fa", "angle-down"]} /></h1>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
 
-                  <Row className="justify-content-center">
-                    <h4>Languages</h4>
-                    {skills.languages.map((lang, i) => (
-                      <LangIcon lang={lang}/>
-                    ))}
-                  </Row>
-
-                  <hr/>
-                  <h4>Additional Experience</h4>
                   <Row>
-                    {skills.secondarySkills.map((skill, i) => (
-                      <Col className="py-4" xl="2" md="4" sm="6">
-                        <SkillIcon skill={skill}/>
-                      </Col>
-                    ))}
+                    <Col xl="2" lg="3">
+                      <h4>Languages</h4>
+                      {skills.languages.map((lang, i) => (
+                        <h6>{lang.skillName}</h6>
+                      ))}
+                      <hr/><br/>
+                    </Col>
+
+                    <Col xl="10" lg="9">
+                      <h4>Additional Experience</h4>
+                      <Row>
+                        {skills.secondarySkills.map((skill, i) => (
+                          <Col className="py-4" xl="2" md="4" sm="6">
+                            <SkillIcon skill={skill}/>
+                          </Col>
+                        ))}
+                      </Row>
+                    </Col>
+
                   </Row>
 
                 </Card.Body>
@@ -83,13 +83,6 @@ const SkillIcon = ({skill}) => (
     <FontAwesomeIcon icon={skill.iconName}/>
     <h6>{skill.skillName}</h6>
   </StyledSkillIcon>
-);
-
-const LangIcon = ({lang}) => (
-  <StyledLangIcon>
-    <FontAwesomeIcon icon={lang.iconName}/>
-    <h6>{lang.skillName}</h6>
-  </StyledLangIcon>
 );
 
 
