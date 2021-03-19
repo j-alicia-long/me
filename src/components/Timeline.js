@@ -95,7 +95,7 @@ const EducationCard = ({item}) => (
       <hr/>
       <Card.Text className="mt-4">
         {item.Achievements.map((activity, i) => (
-          <div>{activity}</div>
+          <div className="mb-2">{activity}</div>
         ))}
       </Card.Text>
     </Card.Body>

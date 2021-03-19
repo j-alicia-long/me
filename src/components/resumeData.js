@@ -53,9 +53,9 @@ let resumeData = {
         "Specialization":"B.S. Computer Science, Cognitive Science",
         "StartDate":"Aug 2017",
         "EndDate":"May 2021",
-        "Achievements": ["Sigma Psi Zeta at UVA (Exec Board, Philanthropy Chair)",
-                         "Asian Leaders Council (Representative)",
-                         "Student Workers' Union", "CMB Color Guard"]
+        "Achievements": ["theCourseForum (President, Product Engineering Lead)",
+                         "Sigma Psi Zeta at UVA (Exec Board, Philanthropy Chair)",
+                         "Asian Leaders Council (Representative)", "CMB Color Guard"]
       },
       {
         "Name":"Thomas Jefferson High School for Science & Technology",

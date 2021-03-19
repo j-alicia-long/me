@@ -17,8 +17,11 @@ const StyledCard = styled(Card)`
     font-size: .7rem;
   }
   .card-footer {
-    background-color: #464e57;
+    background-color: #ce4b58;
     color: white;
+  }
+  a {
+    color: black;
   }
 `;
 

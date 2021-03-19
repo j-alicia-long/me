@@ -10,9 +10,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
- font-family: 'Montserrat', sans-serif;
- font-weight: 300;
- text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 h4, h6 {
   text-transform: none;
@@ -21,12 +21,12 @@ h4, h6 {
 
 /* SidePanel */
 .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
 }
 
 .navbar-brand {
-    margin-right: 0rem;
+  margin-right: 0rem;
 }
 
 .panel-header{
@@ -38,17 +38,17 @@ h4, h6 {
 }
 
 .image-cropper {
-    width: 11rem;
-    height: 11rem;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
+  width: 11rem;
+  height: 11rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
 .profile-img {
   display: inline;
@@ -57,11 +57,11 @@ h4, h6 {
   width: auto;
 }
 .contact-info {
- font-family: 'Oxygen', serif;
- text-transform: lowercase;
+  font-family: 'Oxygen', serif;
+  text-transform: lowercase;
 }
 .social-links {
- font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 

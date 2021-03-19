@@ -13,7 +13,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 const Footer = () => (
   <footer className="main-footer p-3">
     <div class="copyright text-center">
-      Built with &#60;3 in ReactJS | <strong>Jennifer Long</strong> &copy; 2020
+      Built with &#60;3 in ReactJS | <strong>Jennifer Long</strong> &copy; 2021
     </div>
   </footer>
 );
