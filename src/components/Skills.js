@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import { Breakpoint } from 'react-socks';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { Accordion, Card, Button } from 'react-bootstrap';
@@ -30,7 +31,7 @@ class Skills extends Component {
         <h2><strong>Skills</strong></h2>
         <Row className="px-4">
           {skills.primarySkills.map((skill, i) => (
-            <Col className="py-4" xl="2" md="4" sm="6">
+            <Col className="py-4" xl="2" md="4" xs="6">
               <SkillIcon skill={skill}/>
             </Col>
           ))}
@@ -38,7 +39,7 @@ class Skills extends Component {
 
         <Row className="px-4">
           <Accordion className="w-100">
-            <Card style={accordionStyle} className="px-4">
+            <Card style={accordionStyle} className="px-sm-4">
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <h1 style={{'color': 'black'}}><FontAwesomeIcon icon={["fa", "angle-down"]} /></h1>
               </Accordion.Toggle>
@@ -46,20 +47,26 @@ class Skills extends Component {
                 <Card.Body>
 
                   <Row>
-                    <Col xl="2" lg="3">
+                    <Col lg="6" className="px-3 px-xl-5">
                       <h4>Languages</h4>
-                      {skills.languages.map((lang, i) => (
-                        <h6>{lang.skillName}</h6>
-                      ))}
-                      <hr/><br/>
+                      <Row>
+                        {skills.languages.map((lang, i) => (
+                          <Col sm="6">
+                            <h6>{lang.skillName}</h6>
+                          </Col>
+                        ))}
+                      </Row>
+                      <Breakpoint medium down>
+                        <hr/><br/>
+                      </Breakpoint>
                     </Col>
 
-                    <Col xl="10" lg="9">
-                      <h4>Additional Experience</h4>
+                    <Col lg="6" className="px-3 px-xl-5">
+                      <h4>Working Experience</h4>
                       <Row>
                         {skills.secondarySkills.map((skill, i) => (
-                          <Col className="py-4" xl="2" md="4" sm="6">
-                            <SkillIcon skill={skill}/>
+                          <Col sm="6" className="d-inline-flex justify-content-center">
+                            <h6><FontAwesomeIcon icon={skill.iconName}/> {skill.skillName}</h6>
                           </Col>
                         ))}
                       </Row>

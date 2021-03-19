@@ -128,6 +128,10 @@ let resumeData = {
           "skillName":"C & C++",
           "iconName":["fas", "copyright"]
         },
+        {
+          "skillName":"PHP",
+          "iconName":["fab", "php"]
+        }
       ],
       "primarySkills":[
         {
@@ -165,8 +169,8 @@ let resumeData = {
           "iconName":["fa", "code"]
         },
         {
-          "skillName":"ASP.NET Core",
-          "iconName":["fas", "copyright"]
+          "skillName":"Angular",
+          "iconName":["fab", "angular"]
         },
         {
           "skillName":"MongoDB",
