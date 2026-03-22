@@ -1,0 +1,28 @@
+vite.config.ts
+  e9d2520ee437328b 1-7
+index.html
+  e9d2520ee437328b 1-13
+package.json
+  e9d2520ee437328b 2,4-5,7-10,12-14,17-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "e90ec24f85a9adb0206481c037bb1adfd3a04fb8",
+  "prompts": {
+    "e9d2520ee437328b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bc701c8d-85e1-4907-a9de-171a59a515bb",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 160,
+      "total_deletions": 74,
+      "accepted_lines": 138,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/3369020292c45123472e4355ceecb277086354c6aefc8462be4ffde971e9aad0"
+    }
+  }
+}
