@@ -1,0 +1,24 @@
+src/components/home/About.astro
+  8d3d7f855c602e92 1-4,17,19-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "c7faaea67555ec6d6f801eb16547877decd15082",
+  "prompts": {
+    "8d3d7f855c602e92": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "23e07b1f-dbf7-427c-8c29-09f5a861b129",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 21,
+      "total_deletions": 5,
+      "accepted_lines": 18,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/32a6b49c2b4e4cff866edeacc416ff9d8d62dc152c25527b9bd6fa68fd290edf"
+    }
+  }
+}
