@@ -1,0 +1,40 @@
+.github/workflows/deploy.yml
+  b6c982de823bfc44 5
+src/components/home/About.tsx
+  ff59999b9631f14a 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "ae244678a1993aebfe4aaf574072cddf43bcf62a",
+  "prompts": {
+    "b6c982de823bfc44": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c608da0e-6e80-4ded-b422-e5fab16d931e",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 44,
+      "accepted_lines": 1,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/c030ae170f6fb5ebf44a458fe673f4d344a021945d7b5bfdeb6372c5eebf9300"
+    },
+    "ff59999b9631f14a": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "7a14ea07-a777-4499-8480-f7e698a67b0e",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/27c3f19acdfbf653aca16f771235bf62e446a12d4b4994e5e60651f75e12a65b"
+    }
+  }
+}
