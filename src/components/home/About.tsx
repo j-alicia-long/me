@@ -30,7 +30,7 @@ const About = () => (
     <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
       <div className="flex flex-col items-center gap-6">
         <img
-          src="/assets/profile.jpg"
+          src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
           alt="Jennifer"
           className="mx-auto h-64 w-74 rounded-full object-cover lg:mx-0 lg:h-72 lg:w-72"
         />
@@ -46,7 +46,7 @@ const About = () => (
           <br /><br />
           Feel free to connect with me on social media!
         </p>
-        <Button href="/photography">See my work</Button>
+        <Button href={`${import.meta.env.BASE_URL}photography`}>See my work</Button>
       </div>
     </div>
   </Section>
