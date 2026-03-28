@@ -28,7 +28,7 @@ const SocialLinks = () => (
 const About = () => (
   <Section>
     <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <div className="flex flex-col items-center gap-4 lg:items-start">
+      <div className="flex flex-col items-center gap-6">
         <img
           src="/assets/profile.jpg"
           alt="Jennifer"
@@ -46,7 +46,7 @@ const About = () => (
           <br /><br />
           Feel free to connect with me on social media!
         </p>
-        <Button href="/about">Read about me</Button>
+        <Button href="/photography">See my work</Button>
       </div>
     </div>
   </Section>

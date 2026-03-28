@@ -46,7 +46,7 @@ npm run preview
 
 ## Deployment
 
-The site automatically builds and deploys to GitHub Pages whenever you push to the `master` branch. The workflow is defined in `.github/workflows/deploy.yml`.
+The site automatically builds and deploys to GitHub Pages whenever you push to the `main` branch. The workflow is defined in `.github/workflows/deploy.yml`.
 
 To enable this, go to repository **Settings > Pages** and set the source to **GitHub Actions**.
 
