@@ -1,5 +1,5 @@
 ---
-import About from '../components/home/About.astro';
+import About from '../components/home/About';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -7,5 +7,5 @@ import Layout from '../layouts/Layout.astro';
   description="Jennifer Long - Full-stack software engineer building delightful digital experiences."
   title="Jennifer Long"
 >
-  <About />
+  <About client:load />
 </Layout>

@@ -1,5 +1,3 @@
-export const bio = `I'm a full-stack web + iOS developer working at <b>Duolingo</b>, based in <b>New York City</b>. Feel free to connect with me on social media!`;
-
 export const socialLinks = [
   {
     name: 'LinkedIn',
