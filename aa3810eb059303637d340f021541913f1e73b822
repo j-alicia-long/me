@@ -1,0 +1,24 @@
+package.json
+  e9d2520ee437328b 4,6-10,13-20,22-23,28-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "aa3810eb059303637d340f021541913f1e73b822",
+  "prompts": {
+    "e9d2520ee437328b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bc701c8d-85e1-4907-a9de-171a59a515bb",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 19,
+      "total_deletions": 574,
+      "accepted_lines": 19,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/bcff83ab59e1b6a250e0cde9d392ccb58259a50bd6cdda0b53bb6ee5dab8979b"
+    }
+  }
+}
