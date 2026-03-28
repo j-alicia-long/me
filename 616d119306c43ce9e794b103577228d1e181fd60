@@ -1,0 +1,24 @@
+src/utils/photography.ts
+  94e0dea7612985d7 8-20,23,28,30,35,37-38,46,48-49,51-60,62-63,65,67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "616d119306c43ce9e794b103577228d1e181fd60",
+  "prompts": {
+    "94e0dea7612985d7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a2f099eb-c509-4cf5-8608-e3134b01f842",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 36,
+      "total_deletions": 17,
+      "accepted_lines": 36,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/a9c8dee7cded95605298ef5e7eecc028e2bdb473dc81041c98c1d01e95d69708"
+    }
+  }
+}
