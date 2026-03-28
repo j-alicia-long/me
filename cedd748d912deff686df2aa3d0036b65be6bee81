@@ -1,0 +1,32 @@
+src/layouts/Layout.astro
+  b6c982de823bfc44 20-21
+src/components/home/About.tsx
+  b6c982de823bfc44 33,49
+src/pages/404.astro
+  b6c982de823bfc44 24
+src/components/layout/Header.astro
+  b6c982de823bfc44 2,6,10,26
+astro.config.mjs
+  b6c982de823bfc44 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "cedd748d912deff686df2aa3d0036b65be6bee81",
+  "prompts": {
+    "b6c982de823bfc44": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c608da0e-6e80-4ded-b422-e5fab16d931e",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Jennifer Long <jennifer@duolingo.com>",
+      "messages": [],
+      "total_additions": 10,
+      "total_deletions": 8,
+      "accepted_lines": 10,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/0b16456ea394d8a7b61482f50f9e897de8cefe754ebb7c1441eccb730d5ec5ac"
+    }
+  }
+}
