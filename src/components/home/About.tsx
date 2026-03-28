@@ -28,18 +28,24 @@ const SocialLinks = () => (
 const About = () => (
   <Section>
     <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <img
-        src="/assets/profile.jpg"
-        alt="Jennifer"
-        className="mx-auto h-64 w-74 rounded-full object-cover lg:mx-0 lg:h-72 lg:w-72"
-      />
+      <div className="flex flex-col items-center gap-4 lg:items-start">
+        <img
+          src="/assets/profile.jpg"
+          alt="Jennifer"
+          className="mx-auto h-64 w-74 rounded-full object-cover lg:mx-0 lg:h-72 lg:w-72"
+        />
+        <SocialLinks />
+      </div>
       <div className="flex flex-col items-center text-center pt-8 gap-8 sm:gap-10 lg:col-span-2 lg:items-start lg:text-left">
         <p className="text-base text-primary-950/70 dark:text-primary-100/75 sm:text-lg">
           <b>Hi there, I'm Jennifer!</b>
           <br /><br />
-          I'm a full-stack web + iOS developer working at <b>Duolingo</b>, based in <b>New York City</b>. Feel free to connect with me on social media!
+          I'm a full-stack web + iOS developer at <b>Duolingo</b>, based in <b>New York City</b>.
+          <br /><br />
+          I dabble in a variety of creative hobbies including art, music, dance, and photography, and I'm always looking for my next adventure.
+          <br /><br />
+          Feel free to connect with me on social media!
         </p>
-        <SocialLinks />
         <Button href="/about">Read about me</Button>
       </div>
     </div>

@@ -1,4 +1,6 @@
 ---
+import PageDescription from '../components/ui/PageDescription';
+import PageTitle from '../components/ui/PageTitle';
 import Section from '../components/ui/Section';
 import Layout from '../layouts/Layout.astro';
 ---
@@ -9,12 +11,8 @@ import Layout from '../layouts/Layout.astro';
 >
   <Section>
     <div class="flex flex-col items-start gap-8 sm:gap-10">
-      <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
-        Bookshelf
-      </h1>
-      <p class="text-lg text-primary-950/70 dark:text-primary-100/70 sm:text-xl">
-        Coming soon.
-      </p>
+      <PageTitle>My Bookshelf</PageTitle>
+      <PageDescription>A collection of all the art and media that's changed my worldview.</PageDescription>
     </div>
   </Section>
 </Layout>

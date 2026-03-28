@@ -1,0 +1,130 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import PageTitle from '../components/ui/PageTitle';
+import PageDescription from '../components/ui/PageDescription';
+import { photos } from '../data/photography';
+import { resolvePhotos, computeTagCounts, buildSidebarHtml } from '../utils/photography';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import '@fancyapps/ui/dist/fancybox/fancybox.sidebar.css';
+import '../styles/photography.css';
+
+const imageModules = import.meta.glob<{ default: any }>(
+  '../assets/portfolio/*.{jpg,jpeg,png,webp}',
+);
+
+const validPhotos = await resolvePhotos(photos, imageModules);
+const sortedTags = computeTagCounts(validPhotos);
+---
+
+<Layout
+  description="A collection of my photography."
+  title="Photography · Jennifer Long"
+>
+  <section class="py-16 sm:py-20">
+    <div class="flex flex-col items-start gap-8 sm:gap-10">
+      <PageTitle>Photography</PageTitle>
+      <PageDescription>
+        A collection of my photography and art, taken on Android and iPhone.
+        Gallery created with <a class="underline" href="https://fancyapps.com/fancybox" target="_blank">Fancybox</a>.
+      </PageDescription>
+    </div>
+  </section>
+
+  {
+    validPhotos.length > 0 ? (
+      <div x-data="{ selectedTag: '' }">
+        <section class="flex flex-wrap gap-2 pb-8">
+          <button
+            type="button"
+            class="filter-btn"
+            :class="{ 'active': selectedTag === '' }"
+            @click="selectedTag = ''"
+          >
+            All <span class="filter-count">{validPhotos.length}</span>
+          </button>
+          {sortedTags.map(([tag, count]) => (
+            <button
+              type="button"
+              class="filter-btn"
+              :class={`{ 'active': selectedTag === '${tag}' }`}
+              @click={`selectedTag = selectedTag === '${tag}' ? '' : '${tag}'`}
+            >
+              {tag} <span class="filter-count">{count}</span>
+            </button>
+          ))}
+        </section>
+
+        <section class="justified-gallery pb-16 sm:pb-20" id="gallery">
+          {validPhotos.map((photo, index) => (
+            <a
+              style={`--width: ${photo.imageData.width}; --height: ${photo.imageData.height};`}
+              href={photo.imageData.src}
+              target="_blank"
+              data-fancybox="gallery"
+              data-caption={buildSidebarHtml(photo)}
+              data-tags={JSON.stringify(photo.tags)}
+              x-show="selectedTag === '' || JSON.parse($el.dataset.tags).includes(selectedTag)"
+              x-transition:enter="transition ease-out duration-300"
+              x-transition:enter-start="opacity-0"
+              x-transition:enter-end="opacity-100"
+              x-transition:leave="transition ease-in duration-200"
+              x-transition:leave-start="opacity-100"
+              x-transition:leave-end="opacity-0"
+            >
+              <Image
+                format="webp"
+                src={photo.imageData}
+                alt=""
+                height={800}
+                loading={index < 20 ? 'eager' : 'lazy'}
+              />
+              <div class="overlay">
+                {photo.caption && <span class="overlay-caption">{photo.caption}</span>}
+                <div class="overlay-meta">
+                  {photo.location && <span class="overlay-location">{photo.location}</span>}
+                  <span class="overlay-date">{photo.formattedDate}</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </section>
+      </div>
+    ) : (
+      <section class="pb-16 sm:pb-20">
+        <p class="text-lg text-primary-950/70 dark:text-primary-100/70 sm:text-xl">
+          Coming soon.
+        </p>
+      </section>
+    )
+  }
+</Layout>
+
+<script>
+  import { Fancybox } from '@fancyapps/ui/dist/fancybox/';
+import { Sidebar } from '@fancyapps/ui/dist/fancybox/fancybox.sidebar.js';
+
+  Fancybox.bind('[data-fancybox]', {
+    theme: 'auto',
+    plugins: { Sidebar },
+    mainStyle: {
+      '--f-button-width': '44px',
+      '--f-button-height': '44px',
+      '--f-button-border-radius': '50%',
+      '--f-toolbar-padding': '16px',
+      '--sidebar-width': 'clamp(200px, 30vw, 400px)',
+      '--sidebar-padding': '1.5rem',
+    },
+    Carousel: {
+      Arrows: false,
+      Toolbar: {
+        display: {
+          left: [],
+          middle: [],
+          right: ['sidebar', 'close'],
+        },
+      },
+      transition: 'slide',
+    },
+  });
+</script>

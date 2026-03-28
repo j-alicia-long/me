@@ -13,11 +13,13 @@
     "@alpinejs/collapse": "3.12.3",
     "@astrojs/react": "^4.2.0",
     "@astrojs/tailwind": "4.0.0",
+    "@fancyapps/ui": "^6.1.13",
     "@fontsource/inter": "5.0.8",
     "@types/alpinejs": "3.7.2",
     "alpinejs": "3.12.3",
     "astro": "2.10.13",
     "astro-compress": "2.0.14",
+    "exif-reader": "^2.0.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwindcss": "3.3.3"

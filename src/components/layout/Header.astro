@@ -1,24 +1,12 @@
 ---
 const links = [
   {
-    ref: '01',
-    name: 'Home',
-    href: '/',
+    name: 'Photography',
+    href: '/photography',
   },
   {
-    ref: '02',
-    name: 'About',
-    href: '/about',
-  },
-  {
-    ref: '03',
     name: 'Bookshelf',
     href: '/bookshelf',
-  },
-  {
-    ref: '04',
-    name: 'Contact',
-    href: '/contact',
   },
 ];
 ---
@@ -127,14 +115,14 @@ const links = [
     x-collapse
     x-collapse.duration.500ms
   >
-    <div class="grid grid-cols-1 gap-16 pb-24 pt-6 lg:grid-cols-2 lg:pt-12">
+    <div class="grid grid-cols-1 gap-12 pb-12 pt-4 lg:grid-cols-2 lg:pt-4">
       <!-- Navigation -->
       <nav class="flex flex-col gap-1 divide-y divide-primary-900/10 dark:divide-primary-300/10">
         {
           links.map((link) => (
             <a
               href={link.href}
-              class="group inline-flex py-6 text-3xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-8 sm:text-4xl"
+              class="group inline-flex py-6 text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-8 sm:text-2xl"
             >
               <div class="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                 <div class="flex items-center gap-6">
