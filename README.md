@@ -2,7 +2,11 @@
 
 Hi, I'm Jennifer! I'm a full-stack web + iOS developer. This is my portfolio website, built with Astro, React, TypeScript, and Tailwind CSS. Take a look!
 
-Deployed at: https://j-alicia-long.github.io/me
+Deployed at: https://j-alicia-long.github.io
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/f752f617-faa4-431a-8bc2-43c94f358d32" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/1643384d-1d63-41cd-b0f0-85acb4ffc69e" />
+
 
 ## Getting Started
 
