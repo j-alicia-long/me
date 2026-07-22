@@ -35,7 +35,6 @@ npm run preview
 │   ├── layouts/
 │   │   └── Layout.astro # Base HTML shell (fonts, dark mode, Alpine.js)
 │   └── pages/           # File-based routing (index, 404)
-├── legacy/              # Previous CRA-based project (archived)
 ├── astro.config.mjs     # Astro config (Tailwind, React, compress integrations)
 ├── tailwind.config.cjs  # Tailwind theme (stone palette, Inter font)
 ├── tsconfig.json        # TypeScript config (extends Astro strict)
