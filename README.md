@@ -1,6 +1,6 @@
 # Jennifer Long's Portfolio
 
-Hi, I'm Jennifer! I'm a full-stack web + iOS developer. This is my portfolio website, built with Astro, React, TypeScript, and Tailwind CSS. Take a look!
+Hi, I'm Jennifer! I'm a full-stack software engineer. This is my portfolio website, built with Astro, React, TypeScript, and Tailwind CSS. Take a look!
 
 Deployed at: https://j-alicia-long.github.io
 

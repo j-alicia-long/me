@@ -40,7 +40,7 @@ const About = () => (
         <p className="text-base text-primary-950/70 dark:text-primary-100/75 sm:text-lg">
           <b>Hi there, I'm Jennifer!</b>
           <br /><br />
-          I'm a full-stack web + iOS developer at <b>Duolingo</b>, based in <b>New York City</b>.
+          I'm a full-stack software engineer at <b>Duolingo</b>, based in <b>New York City</b>.
           <br /><br />
           I dabble in a variety of creative hobbies including art, music, dance, and photography, and I'm always looking for my next adventure.
           <br /><br />
