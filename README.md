@@ -2,7 +2,7 @@
 
 Hi, I'm Jennifer! I'm a full-stack software engineer. This is my portfolio website, built with Astro, React, TypeScript, and Tailwind CSS. Take a look!
 
-Deployed at: https://j-alicia-long.github.io
+Deployed at: https://j-alicia-long.github.io/me/
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/f752f617-faa4-431a-8bc2-43c94f358d32" />
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/1643384d-1d63-41cd-b0f0-85acb4ffc69e" />
@@ -27,14 +27,19 @@ npm run preview
 ## Architecture
 
 ```
-├── public/              # Static assets served as-is
+├── public/              # Static assets served as-is (favicon, profile photo, manifest)
 ├── src/
+│   ├── assets/          # Gallery photos (portfolio/) and project previews (projects/)
 │   ├── components/
-│   │   ├── home/        # Home page sections (Hero, Services, Expertise, etc.)
-│   │   └── layout/      # Header and Footer
+│   │   ├── home/        # About section (homepage)
+│   │   ├── layout/      # Header and Footer
+│   │   └── ui/          # Button, PageTitle, PageDescription, Section
+│   ├── data/            # Content: about.ts, photography.ts, projects.ts
 │   ├── layouts/
 │   │   └── Layout.astro # Base HTML shell (fonts, dark mode, Alpine.js)
-│   └── pages/           # File-based routing (index, 404)
+│   ├── pages/           # File-based routing (index, projects, photography, bookshelf, 404)
+│   ├── styles/          # global.css (Tailwind directives), photography.css (gallery)
+│   └── utils/           # photography.ts (photo helpers), url.ts (withBase helper)
 ├── astro.config.mjs     # Astro config (React integration, site/base path)
 ├── postcss.config.cjs   # PostCSS config (Tailwind + Autoprefixer)
 ├── tailwind.config.cjs  # Tailwind theme (stone palette, Inter font)
@@ -46,7 +51,7 @@ npm run preview
 - **React 19** available via `@astrojs/react` for interactive components (`.tsx`)
 - **Tailwind CSS 3** with a stone color palette and dark mode (`class` strategy), wired via PostCSS
 - **Alpine.js** for lightweight interactivity (menu toggle, dark mode)
-- **GitHub Actions** for CI/CD (auto-deploys on push to `master`)
+- **GitHub Actions** for CI/CD (auto-deploys on push to `main`)
 
 ## Deployment
 
