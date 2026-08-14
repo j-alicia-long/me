@@ -14,7 +14,7 @@ Deployed at: https://j-alicia-long.github.io
 # Install dependencies
 npm install
 
-# Start the dev server at http://localhost:3000/me/
+# Start the dev server at http://localhost:4321/me/
 npm run dev
 
 # Build for production (output in dist/)
@@ -35,15 +35,16 @@ npm run preview
 │   ├── layouts/
 │   │   └── Layout.astro # Base HTML shell (fonts, dark mode, Alpine.js)
 │   └── pages/           # File-based routing (index, 404)
-├── astro.config.mjs     # Astro config (Tailwind, React, compress integrations)
+├── astro.config.mjs     # Astro config (React integration, site/base path)
+├── postcss.config.cjs   # PostCSS config (Tailwind + Autoprefixer)
 ├── tailwind.config.cjs  # Tailwind theme (stone palette, Inter font)
 ├── tsconfig.json        # TypeScript config (extends Astro strict)
 └── package.json
 ```
 
-- **Astro 2** for static site generation (uses Vite under the hood)
+- **Astro 7** for static site generation (uses Vite under the hood)
 - **React 19** available via `@astrojs/react` for interactive components (`.tsx`)
-- **Tailwind CSS 3** with a stone color palette and dark mode (`class` strategy)
+- **Tailwind CSS 3** with a stone color palette and dark mode (`class` strategy), wired via PostCSS
 - **Alpine.js** for lightweight interactivity (menu toggle, dark mode)
 - **GitHub Actions** for CI/CD (auto-deploys on push to `master`)
 

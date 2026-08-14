@@ -1,17 +1,18 @@
 ---
-const base = import.meta.env.BASE_URL;
+import { withBase } from '../../utils/url';
+
 const links = [
   {
     name: 'Projects',
-    href: `${base}projects`,
+    href: withBase('projects'),
   },
   {
     name: 'Photography',
-    href: `${base}photography`,
+    href: withBase('photography'),
   },
   {
     name: 'Bookshelf',
-    href: `${base}bookshelf`,
+    href: withBase('bookshelf'),
   },
 ];
 ---

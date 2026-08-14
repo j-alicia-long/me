@@ -1,4 +1,5 @@
 import { socialLinks } from '../../data/about';
+import { withBase } from '../../utils/url';
 import Button from '../ui/Button';
 import Section from '../ui/Section';
 
@@ -30,7 +31,7 @@ const About = () => (
     <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
       <div className="flex flex-col items-center gap-6">
         <img
-          src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+          src={withBase('assets/profile.jpg')}
           alt="Jennifer"
           className="mx-auto h-64 w-74 rounded-full object-cover lg:mx-0 lg:h-72 lg:w-72"
         />
@@ -46,7 +47,7 @@ const About = () => (
           <br /><br />
           Feel free to connect with me on social media!
         </p>
-        <Button href={`${import.meta.env.BASE_URL}projects`}>See my work</Button>
+        <Button href={withBase('projects')}>See my work</Button>
       </div>
     </div>
   </Section>
