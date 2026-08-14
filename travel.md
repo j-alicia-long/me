@@ -1,0 +1,80 @@
+# Travel Log
+
+## Historical Destinations (from Google Sheets)
+
+- 2008 - Orlando (FL, Disney World)
+- 2010 - New York (NY)
+- 2011 - Cancun (Mexico)
+- Aug 2016 - Grand Canyon
+- Aug 2016 - Las Vegas
+- Mar 2018 - Nashville (TN)
+- Oct 2018 - Minneapolis (MN)
+- Dec 2018 - New York (NY)
+- Mar 2019 - San Juan (TX)
+- Jun-Aug 2019 - Richmond (VA)
+- Aug-Dec 2019 - Singapore (Study abroad)
+- Sept 2019 - Bintan (Indonesia)
+- Sept 2019 - Kuala Lumpur (Malaysia)
+- Oct 2019 - Bangkok (Thailand)
+- Oct 2019 - Chiangmai (Thailand)
+- Oct 2019 - Hanoi (Vietnam)
+- Nov 2019 - Penang (Malaysia)
+- Dec 2019 - Beijing (China)
+- Jun 2021 - Boston (MA)
+- Jun 2021 - Pittsburgh (PA)
+- Feb 2022 - Cancun (Mexico)
+  - Duolingo Getaway #1
+- Apr 2022 - New York (NY)
+- Sep 2022 - Orlando (FL)
+  - Grace Hopper conference
+- Sep 2022
+  - Toronto (Canada)
+  - Montreal (Canada)
+  - Quebec City (Canada)
+- Dec 2022 - San Juan (Puerto Rico)
+- Feb 2023 - Cancun (Mexico)
+  - Duolingo Getaway #2
+- Apr 2023 - Beijing (China)
+  - First visit to Beijing Duolingo office!
+- Jun 2023 - Pittsburgh, PA
+  - Duoversary trip
+- Aug 2023
+  - PNW (Seattle, Portland)
+  - Bay area + SF
+  - First solo trip to West coast to visit friends!
+
+- Oct 2023 - Berlin, Germany (Duotrip)
+  - \+ London, UK (First solo travel in a hostel!)
+
+- Feb 2024 - Cancun (Mexico)
+  - Duolingo Getaway #3
+- Mar 2024 - Los Angeles, CA
+  - Girls trip w/ Cynthia
+- Aug 2024 - Seattle, WA
+- Nov 2024 - Spain/Portugal solo trip
+  - Barcelona, Spain
+  - Madrid, Spain
+  - Porto, Portugal
+  - Lisbon, Portugal
+
+- Feb 2025 - Cancun (Mexico)
+  - Duolingo Getaway #4
+- Mar 2025 - Girls trip!
+  - Japan (Osaka, Kyoto)
+  - Seoul (Korea)
+- May 2025 - Miami -&gt; Bahamas (Lindsey Stirling cruise)
+- July 2025 - Chicago, IL
+  - Sigmas 2025 National Convention
+  - Lollapalooza
+- Aug 2025 - Bay area
+  - w/ Cynthia
+- Sep 2025 - Beijing (China)
+  - Duo work trip, DETcon
+- Oct 2025 - Tulum (Mexico)
+  - ShuffleHouse retreat!
+- Nov 2025 - London, UK
+- Mar 2026 - Whistler, CAN
+  - Ski trip w/ Lyndon crew
+- July 2026 - South of France
+  - Nice, Cannes, Marseille
+  - For Diana's wedding
