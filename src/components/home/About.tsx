@@ -46,7 +46,7 @@ const About = () => (
           <br /><br />
           Feel free to connect with me on social media!
         </p>
-        <Button href={`${import.meta.env.BASE_URL}photography`}>See my work</Button>
+        <Button href={`${import.meta.env.BASE_URL}projects`}>See my work</Button>
       </div>
     </div>
   </Section>

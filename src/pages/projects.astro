@@ -1,0 +1,112 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import PageTitle from '../components/ui/PageTitle';
+import PageDescription from '../components/ui/PageDescription';
+import { projects } from '../data/projects';
+
+const imageModules = import.meta.glob<{ default: any }>(
+  '../assets/projects/*.{jpg,jpeg,png,webp}',
+);
+
+const resolvedProjects = await Promise.all(
+  projects.map(async (project) => {
+    const key = Object.keys(imageModules).find((k) => k.endsWith(`/${project.image}`));
+    const imageData = key ? (await imageModules[key]()).default : null;
+    return { ...project, imageData };
+  }),
+);
+
+const iconLinkClassNames = [
+  'inline-flex h-8 w-8 items-center justify-center rounded-full transition',
+  'text-primary-950/60 hover:bg-primary-500/10 hover:text-primary-950',
+  'dark:text-primary-100/70 dark:hover:bg-primary-400/10 dark:hover:text-primary-200',
+].join(' ');
+---
+
+<Layout
+  description="A collection of my personal software projects."
+  title="Projects · Jennifer Long"
+>
+  <section class="py-16 sm:py-20">
+    <div class="flex flex-col items-start gap-8 sm:gap-10">
+      <PageTitle>Projects</PageTitle>
+      <PageDescription>
+        A collection of my personal software projects. Click a preview to try
+        it out, or view the source on GitHub.
+      </PageDescription>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 gap-x-8 gap-y-12 pb-16 sm:grid-cols-2 sm:pb-20">
+    {
+      resolvedProjects.map((project) => (
+        <div class="flex flex-col gap-4">
+          <a
+            href={project.liveUrl ?? project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group overflow-hidden rounded-2xl ring-1 ring-primary-950/10 transition hover:ring-primary-950/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-950 dark:ring-primary-100/10 dark:hover:ring-primary-100/25 dark:focus-visible:outline-primary-200"
+          >
+            {project.imageData ? (
+              <Image
+                format="webp"
+                src={project.imageData}
+                alt={`Preview of ${project.name}`}
+                width={1000}
+                class="aspect-[3/2] w-full object-cover object-top transition duration-300 group-hover:scale-[1.02]"
+              />
+            ) : (
+              <div class="flex aspect-[3/2] w-full items-center justify-center bg-primary-500/5 dark:bg-primary-400/5">
+                <span class="text-sm text-primary-950/50 dark:text-primary-100/50">
+                  Preview coming soon
+                </span>
+              </div>
+            )}
+          </a>
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-medium tracking-tight">{project.name}</h2>
+            <div class="flex items-center gap-2">
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class={iconLinkClassNames}
+                aria-label={`${project.name} on GitHub`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </a>
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class={iconLinkClassNames}
+                  aria-label={`${project.name} live site`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6"
+                    aria-hidden="true"
+                  >
+                    <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</Layout>
